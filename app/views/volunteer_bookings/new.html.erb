@@ -1,0 +1,15 @@
+<h1 align='center'>NAMI Oak Ridge Fest</h1>
+<h3 align="center"><%= link_to "Home", root_path %></h3>
+<h4 align='center'>Please enter your information to be a volunteer on <%= @b_date %> at <%= @b_time %>!</h4>
+
+<div align='center'>
+<%= form_for @volunteer_booking do |v|  %>
+	First Name: <%= v.text_field :f_name, required: true %><br />
+	Last Name: <%= v.text_field :l_name %><br />
+	Phone Number: <%= v.text_field :phone_number %><br />
+	Email: <%= v.text_field :email %><br />
+	Time: <%= v.text_field :b_time, :value => @b_time, readonly: true %><br />
+	Date: <%= v.text_field :b_date, :value => @b_date, readonly: true %>
+	<%= v.submit "Sign Up" %>
+<% end %>
+</div>

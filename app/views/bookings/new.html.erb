@@ -1,0 +1,290 @@
+<h1 align='center'>NAMI Secret City Fest</h1>
+<h3 align='center'>Book a time slot!</h3>
+
+<h4 align='center'>September 24th 2021</h4>
+<table align='center'>
+ <thead>
+ <tr>
+   <th>Time</th>
+   <th align='center'>Volunteers</th>
+   <th align='center'>Book Now</th>
+ </tr>
+ </thead>
+ <tbody>
+   <tr>
+      <td>10:00am</td>
+      <% if VolunteerBooking.where(b_time: "10:00am", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "10:00am", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '10:00am', :b_date => '9/24/2021')%></td> 
+   </tr>
+   <tr>
+      <td>11:00am</td>
+      <% if VolunteerBooking.where(b_time: "11:00am", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "11:00am", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '11:00am', :b_date => '9/24/2021')%></td> 
+   </tr>
+   <tr>
+      <td>12:00pm</td>
+      <% if VolunteerBooking.where(b_time: "12:00pm", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "12:00pm", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '12:00pm', :b_date => '9/24/2021')%></td> 
+   </tr>
+   <tr>
+      <td>1:00pm</td>
+      <% if VolunteerBooking.where(b_time: "1:00pm", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "1:00pm", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '1:00pm', :b_date => '9/24/2021')%></td> 
+   </tr>
+   <tr>
+      <td>2:00pm</td>
+      <% if VolunteerBooking.where(b_time: "2:00pm", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "2:00pm", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '2:00pm', :b_date => '9/24/2021')%></td> 
+   </tr>
+   <tr>
+      <td>3:00pm</td>
+      <% if VolunteerBooking.where(b_time: "3:00pm", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "3:00pm", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '3:00pm', :b_date => '9/24/2021')%></td> 
+   </tr>
+   <tr>
+      <td>4:00pm</td>
+      <% if VolunteerBooking.where(b_time: "4:00pm", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "4:00pm", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '4:00pm', :b_date => '9/24/2021')%></td> 
+   </tr>
+   <tr>
+      <td>5:00pm</td>
+      <% if VolunteerBooking.where(b_time: "5:00pm", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "5:00pm", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '5:00pm', :b_date => '9/24/2021')%></td> 
+   </tr>
+   <tr>
+      <td>6:00pm</td>
+      <% if VolunteerBooking.where(b_time: "6:00pm", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "6:00pm", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '6:00pm', :b_date => '9/24/2021')%></td> 
+   </tr>
+   <tr>
+      <td>7:00pm</td>
+      <% if VolunteerBooking.where(b_time: "7:00pm", b_date: "9/24/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "7:00pm", b_date: "9/24/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '7:00pm', :b_date => '9/24/2021')%></td> 
+   </tr>
+ </tbody>
+</table>
+
+<br />
+
+<h4 align='center'>September 25th 2021</h4>
+<table class="table table-bordered" align='center'>
+ <thead>
+ <tr>
+   <th>Time</th>
+   <th align='center'>Volunteer Slots Remaining</th>
+   <th align='center'>Book Now</th>
+ </tr>
+ </thead>
+ <tbody>
+   <tr>
+      <td>10:00am</td>
+      <% if VolunteerBooking.where(b_time: "10:00am", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "10:00am", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '10:00am', :b_date => '9/25/2021')%></td> 
+   </tr>
+   <tr>
+      <td>11:00am</td>
+      <% if VolunteerBooking.where(b_time: "11:00am", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "11:00am", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '11:00am', :b_date => '9/25/2021')%></td> 
+   </tr>
+   <tr>
+      <td>12:00pm</td>
+      <% if VolunteerBooking.where(b_time: "12:00pm", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "12:00pm", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '12:00pm', :b_date => '9/25/2021')%></td> 
+   </tr>
+   <tr>
+      <td>1:00pm</td>
+      <% if VolunteerBooking.where(b_time: "1:00pm", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "1:00pm", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '1:00pm', :b_date => '9/25/2021')%></td> 
+   </tr>
+   <tr>
+      <td>2:00pm</td>
+      <% if VolunteerBooking.where(b_time: "2:00pm", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "2:00pm", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '2:00pm', :b_date => '9/25/2021')%></td> 
+   </tr>
+   <tr>
+      <td>3:00pm</td>
+      <% if VolunteerBooking.where(b_time: "3:00pm", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "3:00pm", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '3:00pm', :b_date => '9/25/2021')%></td> 
+   </tr>
+   <tr>
+      <td>4:00pm</td>
+      <% if VolunteerBooking.where(b_time: "4:00pm", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "4:00pm", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '4:00pm', :b_date => '9/25/2021')%></td> 
+   </tr>
+   <tr>
+      <td>5:00pm</td>
+      <% if VolunteerBooking.where(b_time: "5:00pm", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "5:00pm", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '5:00pm', :b_date => '9/25/2021')%></td> 
+   </tr>
+   <tr>
+      <td>6:00pm</td>
+      <% if VolunteerBooking.where(b_time: "6:00pm", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "6:00pm", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '6:00pm', :b_date => '9/25/2021')%></td> 
+   </tr>
+   <tr>
+      <td>7:00pm</td>
+      <% if VolunteerBooking.where(b_time: "7:00pm", b_date: "9/25/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "7:00pm", b_date: "9/25/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '7:00pm', :b_date => '9/25/2021')%></td> 
+   </tr>
+ </tbody>
+</table>
+
+<br />
+
+<h4 align='center'>September 26th 2021</h4>
+<table class="table table-bordered" align='center'>
+ <thead>
+ <tr>
+   <th>Time</th>
+   <th align='center'>Volunteer Slots Remaining</th>
+   <th align='center'>Book Now</th>
+ </tr>
+ </thead>
+ <tbody>
+   <tr>
+      <td>10:00am</td>
+      <% if VolunteerBooking.where(b_time: "10:00am", b_date: "9/26/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "10:00am", b_date: "9/26/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '10:00am', :b_date => '9/26/2021')%></td> 
+   </tr>
+   <tr>
+      <td>11:00am</td>
+      <% if VolunteerBooking.where(b_time: "11:00am", b_date: "9/26/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "11:00am", b_date: "9/26/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '11:00am', :b_date => '9/26/2021')%></td> 
+   </tr>
+   <tr>
+      <td>12:00pm</td>
+      <% if VolunteerBooking.where(b_time: "12:00pm", b_date: "9/26/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "12:00pm", b_date: "9/26/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '12:00pm', :b_date => '9/26/2021')%></td> 
+   </tr>
+   <tr>
+      <td>1:00pm</td>
+      <% if VolunteerBooking.where(b_time: "1:00pm", b_date: "9/26/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "1:00pm", b_date: "9/26/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '1:00pm', :b_date => '9/26/2021')%></td> 
+   </tr>
+   <tr>
+      <td>2:00pm</td>
+      <% if VolunteerBooking.where(b_time: "2:00pm", b_date: "9/26/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "2:00pm", b_date: "9/26/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '2:00pm', :b_date => '9/26/2021')%></td> 
+   </tr>
+   <tr>
+      <td>3:00pm</td>
+      <% if VolunteerBooking.where(b_time: "3:00pm", b_date: "9/26/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "3:00pm", b_date: "9/26/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '3:00pm', :b_date => '9/26/2021')%></td> 
+   </tr>
+   <tr>
+      <td>4:00pm</td>
+      <% if VolunteerBooking.where(b_time: "4:00pm", b_date: "9/26/2021").count > 4 %>
+        <td align='center'>Full</td>
+      <% else %>
+        <td align='center'><%= VolunteerBooking.where(b_time: "4:00pm", b_date: "9/26/2021").count %></td>
+      <% end %>
+     <td align='center'><%= link_to "<button type='button'>Book</button>".html_safe, new_volunteer_booking_path(:b_time => '4:00pm', :b_date => '9/26/2021')%></td> 
+   </tr>
+ </tbody>
+</table>
+
+<br />

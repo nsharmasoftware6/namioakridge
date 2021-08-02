@@ -1,0 +1,2 @@
+class VolunteerBooking < ApplicationRecord
+end
